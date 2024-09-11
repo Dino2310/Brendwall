@@ -1,0 +1,20 @@
+
+<h2>Список товаров</h2>
+{% if  products %}
+<table>
+    <thead>
+        <th>Название</th>
+        <th>Цена</th>
+    </thead>
+    {% for product in products %}
+    <tbody>
+        
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        
+    </tbody>
+    {% endfor %}
+</table>
+{% else %}
+<H4>товаров нет</H2>
+{% endif %} 
